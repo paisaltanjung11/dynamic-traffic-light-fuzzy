@@ -2,18 +2,6 @@
 
 An intelligent traffic light system leveraging Artificial Intelligence (AI) to optimize pedestrian safety and crossing efficiency. Built with fuzzy logic, real-time data integration, and a user-friendly interface, this project is designed to address the challenges of traffic management in urban environments.
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Future Development](#future-development)
-- [Contributors](#contributors)
-- [License](#license)
-
----
 
 ## Overview
 
@@ -85,3 +73,5 @@ The **Dynamic AI-Powered Traffic Lights** project aims to develop a responsive s
 1. Clone the repository:
    ```bash
    git clone https://github.com/username/repository-name.git
+
+   

@@ -6,11 +6,11 @@ import os
 import json
 from dotenv import load_dotenv
 
-# .env
+# Ambil API key dari st.secrets
 tomtom_api_key = st.secrets["tomtom"]["api_key"]
 opencage_api_key = st.secrets["opencage"]["api_key"]
 
-# get location from IP
+# Fungsi untuk mendapatkan lokasi dari IP
 def get_ip_location():
     import requests
     url = "https://ipinfo.io/json"
@@ -21,7 +21,7 @@ def get_ip_location():
     longitude = loc[1]
     return float(latitude), float(longitude)
 
-# get city name and country name by coordinate
+# Fungsi untuk mendapatkan nama kota dan negara dari koordinat
 def get_city_and_country(lat, lon):
     import requests
     url = f"https://api.opencagedata.com/geocode/v1/json?q={lat}+{lon}&key={opencage_api_key}"
@@ -34,30 +34,27 @@ def get_city_and_country(lat, lon):
     else:
         return 'Unknown City', 'Unknown Country'
 
-
 st.title("Durasi Lampu Lalu Lintas Dinamis dengan Fuzzy Logic")
 
 option = st.radio("Pilih Metode", ["Otomatis (GPS)", "Manual (Database)"])
 
 if option == "Otomatis (GPS)":
-    # get coordinate from gps
+    # Ambil koordinat dari GPS
     lat, lon = get_ip_location()
     city, country = get_city_and_country(lat, lon)
 
     st.write(f"Lokasi: {city}, {country} (Latitude: {lat}, Longitude: {lon})")
 
-    # Input 
+    # Input
     num_people = st.slider("Jumlah Pejalan Kaki", 0, 100, 10)
     time_of_day = st.slider("Waktu (Jam)", 0, 23, 12)
 
     if st.button("Ambil Data Lalu Lintas (Otomatis)"):
-
         try:
             traffic_data = get_traffic_data(lat, lon)
-            # Kecepatan tidak lagi digunakan untuk perhitungan, hanya num_people dan time_of_day
             duration = calculate_duration(num_people, time_of_day)
-            
-            # result
+
+            # Hasil
             st.write(f"Kecepatan Saat Ini: {traffic_data['speed']} km/h")
             st.write(f"**Kecepatan Normal**: {traffic_data['road_speed']} km/h")
             st.write(f"Tingkat Kepadatan: {traffic_data['occupancy']}")
@@ -86,7 +83,7 @@ elif option == "Manual (Database)":
 
     # Pilih lokasi dari locations.json
     location_name = st.selectbox("Pilih Lokasi", list(locations.keys()))
-    
+
     # Input untuk jumlah pejalan kaki dan waktu
     num_people = st.slider("Jumlah Pejalan Kaki", 0, 100, 10)
     time_of_day = st.slider("Waktu (Jam)", 0, 23, 12)
@@ -95,7 +92,7 @@ elif option == "Manual (Database)":
         try:
             # Ambil data lalu lintas dari lokasi yang dipilih
             traffic_data = get_traffic_data_from_location(location_name)
-            
+
             # Perhitungan durasi lampu hijau berdasarkan jumlah pejalan kaki dan waktu
             duration = calculate_duration(num_people, time_of_day)
 
@@ -122,4 +119,3 @@ elif option == "Manual (Database)":
 
         except Exception as e:
             st.error(f"Terjadi kesalahan: {e}")
-

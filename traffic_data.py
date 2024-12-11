@@ -4,15 +4,14 @@ import requests
 import json
 from dotenv import load_dotenv
 
-# load API dari .env (secret)
-load_dotenv()
-API_KEY = os.getenv("TOMTOM_API_KEY")
+# Ambil API Key dari st.secrets
+TOMTOM_API_KEY = st.secrets["tomtom"]["api_key"]
 
-# get data lalu lintas base coordinate (adj8) using tomtom
+# Fungsi untuk mendapatkan data lalu lintas berdasarkan koordinat
 def get_traffic_data(lat, lon):
     url = "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json"
     params = {
-        "key": API_KEY,
+        "key": TOMTOM_API_KEY,
         "point": f"{lat},{lon}"
     }
     response = requests.get(url, params=params)
@@ -26,7 +25,7 @@ def get_traffic_data(lat, lon):
     else:
         raise ValueError(f"API Error: {response.status_code} - {response.text}")
 
-# get data lalu lintas dari lokasi (.json) manual
+# Fungsi untuk mendapatkan data lalu lintas dari lokasi manual
 def get_traffic_data_from_location(location_name):
     with open("locations.json", "r") as file:
         locations = json.load(file)
@@ -39,7 +38,7 @@ def get_traffic_data_from_location(location_name):
 
     url = "https://api.tomtom.com/traffic/services/4/flowSegmentData/absolute/10/json"
     params = {
-        "key": API_KEY,
+        "key": TOMTOM_API_KEY,
         "point": f"{lat},{lon}"
     }
     response = requests.get(url, params=params)
@@ -53,3 +52,4 @@ def get_traffic_data_from_location(location_name):
         }
     else:
         raise ValueError(f"API Error: {response.status_code} - {response.text}")
+

@@ -79,7 +79,7 @@ You can run this project locally on your PC or access the deployed web applicati
    Clone the repository or download the ZIP file from GitHub
 
 2. **Install dependencies**:
-   pip install -r requirements.txt (Alternatively, you can follow the detailed instructions in manual-install.txt.)
+   pip install -r requirements.txt (Alternatively, you can follow the detailed instructions in manual-install.txt)
 
 3. **Open the project**:
     Open the project in your preferred code editor, such as Visual Studio Code.

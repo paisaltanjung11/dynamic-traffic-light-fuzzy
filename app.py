@@ -7,9 +7,8 @@ import json
 from dotenv import load_dotenv
 
 # .env
-load_dotenv()
-API_KEY = os.getenv("TOMTOM_API_KEY")
-OPENCAGE_API_KEY = os.getenv("OPENCAGE_API_KEY")
+tomtom_api_key = st.secrets["tomtom"]["api_key"]
+opencage_api_key = st.secrets["opencage"]["api_key"]
 
 # get location from IP
 def get_ip_location():

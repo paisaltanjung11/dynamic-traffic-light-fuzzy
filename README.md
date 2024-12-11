@@ -74,7 +74,7 @@ You can run this project locally on your PC or access the deployed web applicati
 
 ### Option 1: Run Locally
 
-1. **Download the repository**:  
+1. **Download the repository**:
    Clone the repository or download the ZIP file from GitHub
 
 2. **Install dependencies**:

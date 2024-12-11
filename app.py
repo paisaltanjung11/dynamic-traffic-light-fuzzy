@@ -5,6 +5,8 @@ from traffic_data import get_traffic_data, get_traffic_data_from_location
 import os
 import json
 from dotenv import load_dotenv
+import streamlit.components.v1 as components
+
 
 # Ambil API key dari st.secrets
 tomtom_api_key = st.secrets["tomtom"]["api_key"]

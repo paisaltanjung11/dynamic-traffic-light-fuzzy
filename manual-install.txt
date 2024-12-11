@@ -1,0 +1,7 @@
+pip install streamlit
+pip install streamlit scikit-fuzzy numpy 
+pip install numpy scikit-fuzzy streamlit python-dotenv requests
+pip install python-dotenv
+pip install requests
+pip install scipy
+pip install network

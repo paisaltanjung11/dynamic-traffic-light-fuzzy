@@ -1,14 +1,87 @@
-Implementasi Model Kecerdasan Buatan dalam Sistem Lampu Lalu Lintas Dinamis untuk Pejalan Kaki
+# Dynamic AI-Powered Traffic Lights for Pedestrian Crossings  
 
-Deskripsi Singkat:
-Proyek ini bertujuan mengembangkan sistem lampu lalu lintas berbasis kecerdasan buatan (AI) yang adaptif untuk meningkatkan efisiensi dan keselamatan penyeberangan pejalan kaki. Sistem ini menggunakan logika fuzzy untuk menentukan durasi lampu hijau berdasarkan data real-time, seperti jumlah pejalan kaki, kecepatan kendaraan, lebar jalan, dan waktu dalam sehari. Dibangun menggunakan Python, Streamlit untuk antarmuka interaktif, serta API seperti TomTom Traffic dan OpenCage Geocoding.
+An intelligent traffic light system leveraging Artificial Intelligence (AI) to optimize pedestrian safety and crossing efficiency. Built with fuzzy logic, real-time data integration, and a user-friendly interface, this project is designed to address the challenges of traffic management in urban environments.
 
-Fitur Utama:
-Logika Fuzzy Adaptif: Mengoptimalkan durasi lampu lalu lintas sesuai kondisi lalu lintas.
-Data Real-Time: Mengintegrasikan TomTom Traffic API untuk mendapatkan kecepatan kendaraan dan kepadatan lalu lintas.
-Antarmuka Interaktif: Dibangun dengan Streamlit untuk simulasi otomatis dan manual.
-Kontribusi SDG 11: Mendukung pembangunan kota yang ramah pejalan kaki dan berkelanjutan.
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Future Development](#future-development)
+- [Contributors](#contributors)
+- [License](#license)
 
-Cara Penggunaan:
+---
 
-1. Clone repositori ini:
+## Overview
+
+The **Dynamic AI-Powered Traffic Lights** project aims to develop a responsive system that dynamically adjusts traffic light durations for pedestrians based on real-time conditions. By integrating fuzzy logic with APIs like TomTom Traffic and OpenCage Geocoding, the system enhances urban mobility, reduces pedestrian waiting times, and promotes adherence to traffic rules.
+
+### Objectives:
+1. **Optimize Pedestrian Crossing Durations**: Adjust traffic light timings dynamically to minimize waiting time.
+2. **Enhance Safety**: Reduce accident risks by ensuring sufficient crossing times.
+3. **Support Sustainable Cities**: Contribute to Sustainable Development Goal 11 by promoting efficient and pedestrian-friendly traffic systems.
+
+---
+
+## Features
+
+- **Adaptive Fuzzy Logic**  
+  Implements a fuzzy inference system to adjust traffic light durations based on:
+  - Number of pedestrians.
+  - Vehicle speed.
+  - Road width.
+  - Time of day.
+
+- **Real-Time Traffic Data Integration**  
+  Utilizes TomTom Traffic API to collect live traffic conditions, including vehicle speed and congestion levels.
+
+- **Interactive User Interface**  
+  Built with Streamlit to allow users to test and simulate the system:
+  - Automatic mode (GPS-based).
+  - Manual mode (customizable input parameters).
+
+- **Scalable and Modular Design**  
+  The system can be expanded with additional sensors and historical data for enhanced performance.
+
+---
+
+## Architecture
+
+1. **Input**:  
+   - Pedestrian count (manual or computer vision in future development).  
+   - Vehicle speed and congestion data (via TomTom API).  
+   - Time of day.  
+   - Road width (manual configuration).  
+
+2. **Processing**:  
+   - Fuzzy logic system processes input data to determine optimal light durations.  
+
+3. **Output**:  
+   - Dynamic green light durations tailored to current traffic conditions.  
+
+4. **Interface**:  
+   - Displays real-time traffic conditions and recommended crossing durations.
+
+---
+
+## Technologies Used
+
+- **Programming Language**: Python  
+- **Libraries**:  
+  - [scikit-fuzzy](https://pythonhosted.org/scikit-fuzzy/) for fuzzy logic implementation.  
+  - [Streamlit](https://streamlit.io/) for the interactive web interface.  
+
+- **APIs**:  
+  - [TomTom Traffic API](https://developer.tomtom.com/) for real-time traffic data.  
+  - [OpenCage Geocoding API](https://opencagedata.com/) for location-based data.  
+
+---
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/repository-name.git

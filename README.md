@@ -70,8 +70,22 @@ The **Dynamic AI-Powered Traffic Lights** project aims to develop a responsive s
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/repository-name.git
+You can run this project locally on your PC or access the deployed web application.
 
+### Option 1: Run Locally
+
+1. **Download the repository**:  
+   Clone the repository or download the ZIP file from GitHub
+
+2. **Install dependencies**:
+   pip install -r requirements.txt (Alternatively, you can follow the detailed instructions in manual-install.txt.)
+
+3. **Open the project**:
+    Open the project in your preferred code editor, such as Visual Studio Code.
+
+4. **Run the application**:
+    streamlit run app.py
+
+### Option 2: Access the Deployed Application
+https://dynamic-traffic-light-using-fuzzy-approach.streamlit.app/
    

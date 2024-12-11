@@ -38,19 +38,19 @@ The **Dynamic AI-Powered Traffic Lights** project aims to develop a responsive s
 
 ## Architecture
 
-1. **Input**:  
+1. **Input**:
    - Pedestrian count (manual or computer vision in future development).  
    - Vehicle speed and congestion data (via TomTom API).  
    - Time of day.  
    - Road width (manual configuration).  
 
-2. **Processing**:  
+2. **Processing**:
    - Fuzzy logic system processes input data to determine optimal light durations.  
 
-3. **Output**:  
+3. **Output**:
    - Dynamic green light durations tailored to current traffic conditions.  
 
-4. **Interface**:  
+4. **Interface**:
    - Displays real-time traffic conditions and recommended crossing durations.
 
 ---

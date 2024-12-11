@@ -1,0 +1,72 @@
+{
+  "Kemanggisan Binus Anggrek": {
+    "latitude": -6.200913,
+    "longitude": 106.781995,
+    "road_width": 12
+  },
+  "Slipi Petamburan": {
+    "latitude": -6.1975,
+    "longitude": 106.801667,
+    "road_width": 10
+  },
+  "Simpang Tiga Batusari (Lampu Merah)": {
+    "latitude": -6.198867,
+    "longitude": 106.78233,
+    "road_width": 10
+  },
+  "Stasiun Gambir": {
+    "latitude": -6.175392,
+    "longitude": 106.827153,
+    "road_width": 10
+  },
+  "Stasiun Jakarta Kota": {
+    "latitude": -6.148659,
+    "longitude": 106.82718,
+    "road_width": 12
+  },
+  "Stasiun Sudirman": {
+    "latitude": -6.208763,
+    "longitude": 106.823091,
+    "road_width": 10
+  },
+  "Bundaran HI": {
+    "latitude": -6.19014,
+    "longitude": 106.822767,
+    "road_width": 15
+  },
+  "Jalan Thamrin": {
+    "latitude": -6.192173,
+    "longitude": 106.822835,
+    "road_width": 12
+  },
+  "Kawasan Menteng": {
+    "latitude": -6.19393,
+    "longitude": 106.840755,
+    "road_width": 10
+  },
+  "Kawasan Cikini": {
+    "latitude": -6.185237,
+    "longitude": 106.849083,
+    "road_width": 9
+  },
+  "Jalan Raya Rasuna Said (Kuningan)": {
+    "latitude": -6.216508,
+    "longitude": 106.830491,
+    "road_width": 14
+  },
+  "Jalan Sudirman": {
+    "latitude": -6.211,
+    "longitude": 106.820042,
+    "road_width": 12
+  },
+  "Kawasan Senayan": {
+    "latitude": -6.227999,
+    "longitude": 106.801555,
+    "road_width": 14
+  },
+  "Gelora Bung Karno": {
+    "latitude": -6.229458,
+    "longitude": 106.797229,
+    "road_width": 16
+  }
+}

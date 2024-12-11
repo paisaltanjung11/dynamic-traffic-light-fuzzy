@@ -90,6 +90,8 @@ You can run this project locally on your PC or access the deployed web applicati
 ### Option 2: Access the Deployed Application
 https://dynamic-traffic-light-using-fuzzy-approach.streamlit.app/
 
+---
+
 ## Contributors  
 This project is developed by a team of Computer Science students from Bina Nusantara University:
 

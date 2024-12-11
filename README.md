@@ -88,7 +88,13 @@ You can run this project locally on your PC or access the deployed web applicati
     streamlit run app.py
 
 ### Option 2: Access the Deployed Application
-https://dynamic-traffic-light-using-fuzzy-approach.streamlit.app/
+[https://dynamic-traffic-light-using-fuzzy-approach.streamlit.app/](https://dynamic-traffic-light-using-fuzzy-approach.streamlit.app/)
+
+**Note**:  
+If you download and run the application locally, you might encounter an error because the program cannot find the required `secrets.toml` file. Therefore, we recommend accessing the deployed application at the link above for a smoother experience.
+
+If you prefer to run the app locally and need the `secrets.toml` file, feel free to contact me via [email, social media, or other contact methods] to receive the file. Thank you!
+
 
 ---
 

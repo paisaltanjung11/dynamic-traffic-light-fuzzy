@@ -24,7 +24,7 @@ def get_ip_location():
 # get city name and country name by coordinate
 def get_city_and_country(lat, lon):
     import requests
-    url = f"https://api.opencagedata.com/geocode/v1/json?q={lat}+{lon}&key={OPENCAGE_API_KEY}"
+    url = f"https://api.opencagedata.com/geocode/v1/json?q={lat}+{lon}&key={opencage_api_key}"
     response = requests.get(url)
     data = response.json()
     if data['results']:

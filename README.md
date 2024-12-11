@@ -17,22 +17,22 @@ The **Dynamic AI-Powered Traffic Lights** project aims to develop a responsive s
 
 ## Features
 
-- **Adaptive Fuzzy Logic**  
+- **Adaptive Fuzzy Logic**
   Implements a fuzzy inference system to adjust traffic light durations based on:
   - Number of pedestrians.
   - Vehicle speed.
   - Road width.
   - Time of day.
 
-- **Real-Time Traffic Data Integration**  
+- **Real-Time Traffic Data Integration**
   Utilizes TomTom Traffic API to collect live traffic conditions, including vehicle speed and congestion levels.
 
-- **Interactive User Interface**  
+- **Interactive User Interface**
   Built with Streamlit to allow users to test and simulate the system:
   - Automatic mode (GPS-based).
   - Manual mode (customizable input parameters).
 
-- **Scalable and Modular Design**  
+- **Scalable and Modular Design**
   The system can be expanded with additional sensors and historical data for enhanced performance.
 
 ---

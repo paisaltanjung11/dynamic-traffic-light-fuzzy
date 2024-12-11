@@ -100,8 +100,6 @@ This project is developed by a team of Computer Science students from Bina Nusan
 ### Jason Tirtadjaja  
 ### Justin Deryl Ferdinand  
 
----
-
 As the Team Leader, I was responsible for overseeing the entire project lifecycle, ensuring its successful execution from start to finish. My contributions included designing and modeling the system architecture to ensure scalability and efficiency, as well as developing the prototype and implementing the system to translate theoretical designs into a functional application. I conducted rigorous system testing to identify and address issues, ensuring the solution met both performance and quality standards. Post-implementation, I evaluated the system and introduced refinements for continuous improvement. Additionally, I coordinated the team’s efforts to ensure all project milestones were met on schedule, provided technical and strategic guidance to foster collaboration and innovation among team members, and assisted in debugging and optimizing the system to enhance its functionality and user experience.
 
 

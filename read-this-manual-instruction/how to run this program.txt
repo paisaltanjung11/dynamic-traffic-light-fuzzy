@@ -1,0 +1,25 @@
+Jadi akan ada 2 cara untuk menjalankan aplikasi:
+
+CARA MENJALANKAN PROJECT:
+Silahkan pilih salah satu cara untuk menginstall dependency(pilih salah 1)
+
+[CARA-1]
+1. buka folder yang berisi kode seluruh kode project, pastikan ada folder .streamlit dan secrets.toml 
+2. menginstall library yang diperlukan secara manual maka buka file manual-installation.txt
+3. lalu paste di cmd atau terminal vscode yang kalian gunakan
+4. tunggu hingga proses installasi selesai
+5. buka cmd lalu ketik streamlit run app.py untuk menjalankan program secara local
+
+[CARA-2]
+install di requirements.txt pastikan virtual environment aktif
+1. buka folder yang berisi kode seluruh project, pastikan ada folder .streamlit dan secrets.toml
+2. klik cmd
+3. jalankan command berikut pip install -r requirements.txt
+4. cek apakah dependensi sudah terinstall atau blm dengan cara pip list
+5. buka cmd lalu ketik streamlit run app.py untuk menjalankan program secara local
+
+ATAU
+
+buka program yang sudah di deploy melalui link:
+https://dynamic-traffic-light-using-fuzzy-approach.streamlit.app/
+
